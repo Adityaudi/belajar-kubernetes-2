@@ -73,6 +73,9 @@ aws s3api create-bucket \
     --region us-east-1 # <- example region
     # Note: We STRONGLY recommend versioning your S3 bucket in case you ever need to revert or recover a previous state store.
 
+```bash
+aws s3 mb s3://k8s-coffeeshopp-apps
+
 # versioning buccket
 aws s3api put-bucket-versioning --bucket k8s-devops-store --versioning-configuration Status=Enabled
 
